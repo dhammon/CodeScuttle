@@ -1,0 +1,32 @@
+
+
+class Config():
+    token = "<YOUR GH TOKEN HERE"
+    excludes = {
+        "exclude1": {
+            "rule1": "lol",
+            "rule2": "http://lol.com"
+        },
+        "exclude2": {
+            "rule1": "main.py",
+            "rule2": '"login":"dhammond"',
+            #"rule3": "lollol"
+        }
+    }
+    queries = {
+        "query1": {
+            "name": "Attess main.py",
+            "description": "testing",
+            "query": '"checkAccountNumber" "enumerateAccounts"'
+        },
+        "query2": {
+            "name": "",
+            "description": "testing private",
+            "query": '"Framework (Implant PeddleCheap)"'
+        },
+        "empty": {
+            "name": "",
+            "description": "returns no results",
+            "query": 'skjfdlasjkfjaslfkjasljfdlajewiofjwoenvanooizlkcvoi'
+        }
+    }

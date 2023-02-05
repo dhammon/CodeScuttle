@@ -1,0 +1,29 @@
+
+
+class Config():
+    token = "<YOUR GITHUB API TOKEN HERE>"
+    excludes = {
+        "exclude1": {
+            "rule1": "lol",
+            "rule2": "http://lol.com"
+        },
+        "exclude2": {
+            "rule1": "main.py",
+            "rule2": '"login":"dhammon"',
+        }
+    }
+    queries = {
+        "publicRepo": {
+            "description": "search public repos",
+            "query": '"checkAccountNumber" "enumerateAccounts"'
+        },
+        "privateRepo": {
+            "description": "search in private repos",
+            "query": '"Framework (Implant PeddleCheap)"'
+        },
+        "noRepo": {
+            "description": "returns no results",
+            "query": 'skjfdlasjkfjaslfkjasljfdlajewiofjwoenvanooizlkcvoi'
+        }
+    }
+        
